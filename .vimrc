@@ -1,7 +1,7 @@
 set nu
 set encoding=utf-8
 
-
+set cursorline
 
 "---------------------- Vundle Section ---------------------------------------
 
@@ -37,9 +37,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/indentpython.vim'
 
-Bundle 'Valloric/YouCompleteMe'
 
-Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'kien/ctrlp.vim'
@@ -73,7 +71,8 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
 syntax on
 
-colors zenburn
+let g:airline_powerline_fonts = 1
+
 
 
 "------------ Start with the last cursor position------------------------
